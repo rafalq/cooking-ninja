@@ -8,7 +8,7 @@ import Searchbar from "../searchbar/SearchBar";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const { color, changeColor } = useTheme();
+  const { color } = useTheme();
   return (
     <div className="navbar" style={{ background: color }}>
       <nav>
