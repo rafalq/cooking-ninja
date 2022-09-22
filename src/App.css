@@ -1,0 +1,63 @@
+.App {
+  min-height: 100%;
+}
+.main {
+  padding: 2rem;
+}
+.page-title {
+  text-align: center;
+  margin: 40px auto;
+  color: #333;
+}
+
+/* button */
+.app-btn {
+  color: rgb(38, 38, 38);
+  background-color: rgb(237, 237, 237);
+  text-decoration: none;
+  margin-left: 40px;
+  padding: 8px;
+  border: 2px solid rgb(38, 38, 38);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.app-btn:hover {
+  background: rgb(38, 38, 38);
+  color: rgb(237, 237, 237);
+}
+
+
+/* .loading-spinner */
+.spinner-container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* error message */
+.error {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
