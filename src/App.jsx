@@ -8,14 +8,16 @@ import Home from "@/pages/home/Home";
 import Recipe from "@/pages/recipe/Recipe";
 import Search from "@/pages/search/Search";
 import Navbar from "@/components/navbar/Navbar";
+import ThemeSelector from "@/components/theme/ThemeSelector";
+import {useTheme} from "@/hooks/useTheme"
 
 // styles
 import "./App.css";
-import ThemeSelector from "./components/theme/ThemeSelector";
 
 function App() {
+  const { mode } = useTheme()
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <Navbar />
       <div className="main">
         <ThemeSelector />

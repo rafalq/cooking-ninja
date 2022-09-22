@@ -5,7 +5,7 @@ import { useFetch } from "../../hooks/useFetch"
 import "./Search.css"
 
 // components
-import RecipeList from '../../components/recipelist/RecipeList'
+import RecipeList from '@/components/recipe/RecipeList'
 
 export default function Search() {
   const [searchParams, setSearchParams] = useSearchParams('')

@@ -1,6 +1,12 @@
 .App {
   min-height: 100%;
 }
+
+.App.dark {
+  background: #333;
+  color: rgb(242, 242, 242);
+}
+
 .main {
   padding: 2rem;
 }
